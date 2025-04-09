@@ -24,3 +24,9 @@ https://www.close.com/careers?ashby_jid=9cee96e9-52ef-481f-87ab-40c69ccbac38
 - put highlighted list in box/accordion
 - better styling for item when selected
 - can implement useref/usememo later on
+
+### Screenshots
+
+![empty list](public/empty_list.png)
+
+![selected items](public/selected_items.png)
