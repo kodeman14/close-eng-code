@@ -25,6 +25,11 @@
 .List__item--active {
   font-weight: bold;
   border: 2px #fff dashed;
+  /* can style this further */
+}
+
+.List__display {
+  columns: 3;
 }
 
 /* Taken from https://clrs.cc/ */

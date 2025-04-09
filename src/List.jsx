@@ -15,8 +15,26 @@ const List = ({ items }) => {
 
   return (
     <>
-    <ul className="List">
-      {items.map(item => (
+      <div>
+        <label>
+          Selected Items: {selected.length || 'N/A' }
+        </label>
+        {/* simple display separated by comma */}
+        {/* <p>
+          {selected.join(', ')}
+        </p> */}
+        <ul className='List__display'>
+          {/* displaying items in numbered list */}
+          {selected.map((item, idx) => (
+            <li key={idx} className='List__item List__item--selected'>
+              {idx+1}. {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <hr/>
+      <ul className="List">
+        {items.map(item => (
           <li
             key={item.name}
             className={`
@@ -25,12 +43,12 @@ const List = ({ items }) => {
             `}
             onClick={() => handleSelect(item.name)}
           >
-          {item.name}
-        </li>
-      ))}
-    </ul>
+            {item.name}
+          </li>
+        ))}
+      </ul>
     </>
-);
+  );
 }
 
 export default List;
