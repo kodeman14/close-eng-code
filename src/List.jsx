@@ -21,6 +21,7 @@ const List = ({ items }) => {
             key={item.name}
             className={`
               List__item List__item--${item.color}
+              ${selected.includes(item.name) ? 'List__item--active' : ''}
             `}
             onClick={() => handleSelect(item.name)}
           >
