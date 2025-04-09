@@ -1,4 +1,7 @@
-### Implement a feature to allow item selection with the following requirements:
+## coding test for "close"
+
+### Task
+Implement a feature to allow item selection with the following requirements:
 
 1. Clicking an item selects/unselects it.
 
@@ -12,4 +15,12 @@
 
 ---
 
+### Link
 https://www.close.com/careers?ashby_jid=9cee96e9-52ef-481f-87ab-40c69ccbac38
+
+### Improvements
+
+- improve border on the selected items
+- put highlighted list in box/accordion
+- better styling for item when selected
+- can implement useref/usememo later on
