@@ -5,8 +5,12 @@ import './assets/List.css'
 const List = ({ items }) => {
   const [selected, setSelected] = useState([]);
 
-  const handleSelect = (ev) => {
-    console.log('ev', ev)
+  const handleSelect = (itemName) => {
+    if (selected.includes(itemName)) {
+      setSelected(selected.filter(item => item !== itemName))
+    } else {
+      setSelected([...selected, itemName])
+    }
   }
 
   return (
@@ -18,7 +22,7 @@ const List = ({ items }) => {
             className={`
               List__item List__item--${item.color}
             `}
-            onClick={handleSelect}
+            onClick={() => handleSelect(item.name)}
           >
           {item.name}
         </li>
