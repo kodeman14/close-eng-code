@@ -32,6 +32,10 @@
   columns: 3;
 }
 
+.List__item--selected {
+  color: red;
+}
+
 /* Taken from https://clrs.cc/ */
 
 .List__item--navy {
